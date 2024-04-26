@@ -1,0 +1,30 @@
+.tags_zone {
+  h4 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  div {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 18px 20px;
+
+    > a {
+      color: #666c6c;
+      border: 1px solid #666c6c;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      line-height: 1.25rem; /* 142.857% */
+      padding: 0.5rem 1.45rem;
+
+      &:hover,
+      &.active {
+        background-color: $link-active;
+        color: black;
+        border: 1px solid $link-active;
+      }
+    }
+  }
+}

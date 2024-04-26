@@ -1,0 +1,10 @@
+@import "./components/search_zone";
+@import "./components/cards_zone";
+
+main {
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}

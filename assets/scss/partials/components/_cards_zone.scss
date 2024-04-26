@@ -1,0 +1,76 @@
+.news_cards_zone {
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  gap: 35px;
+
+  > div {
+    &:first-child {
+      grid-column: span 17;
+    }
+    &:last-child {
+      grid-column: span 13;
+    }
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background: linear-gradient(180deg, #1f2a2b 0%, #274749 100%);
+    border-radius: 15px;
+    padding: 0 2rem;
+    height: auto;
+
+    &_content {
+      display: flex;
+      height: 80%;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 7px;
+
+      > .title {
+        > h3 {
+          padding: 0;
+          margin: 0;
+          color: white;
+          font-weight: 600;
+        }
+      }
+
+      > .text {
+        color: #91a2a4;
+        font-weight: 400;
+        padding: 0;
+      }
+
+      > .button {
+        > a {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          background-color: $link-active;
+          width: max-content;
+          padding: 0.95rem 1.45rem;
+          border-radius: 7px;
+          font-weight: 600;
+          font-size: 0.9rem;
+          color: black;
+        }
+
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &_image {
+      display: flex;
+      justify-items: center;
+      img {
+        max-height: 15rem;
+        object-fit: contain;
+        aspect-ratio: 1/1;
+        mix-blend-mode: overlay;
+        filter: contrast(1.25);
+      }
+    }
+  }
+}

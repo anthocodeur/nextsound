@@ -5,10 +5,11 @@ $background-header: #0f0f0f;
 $font-family: "Inter", sans-serif;
 $link-color: #808787;
 $link-active: #5fb0b7;
+$link-tertiary: rgba(46, 91, 111, 1);
 
-$dot-colors: blue, red, yellow, green, purple, pink, orange;
+$dot-colors: (blue, red, yellow, green, purple, pink, orange, darkblue);
 @each $dot-color in $dot-colors {
-  .dot_color_#{$dot-color} {
+  .dot_color_#{"" + $dot-color} {
     background-color: $dot-color;
     width: 6px;
     height: 6px;

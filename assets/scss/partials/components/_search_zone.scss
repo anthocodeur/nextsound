@@ -1,0 +1,59 @@
+.search_zone {
+  display: grid;
+  grid-template-columns: 13fr 10fr;
+  align-items: center;
+
+  .search_input_group {
+    position: relative;
+    .search_icon {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+    }
+
+    input {
+      width: 70%;
+      height: 50px;
+      border: none;
+      outline: none;
+      background-color: #1f1f1f;
+      text-indent: 45px;
+      border-radius: 7px;
+    }
+  }
+
+  .cta_group {
+    display: flex;
+    padding: 0 1rem;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.75rem;
+
+    .download_container {
+      a {
+        background-color: $link-active;
+        color: black;
+        padding: 0.75rem 1.5rem;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &:hover {
+          background-color: $link-tertiary;
+        }
+      }
+    }
+    .profile {
+      img {
+        border-radius: 75px;
+        width: 2.6rem;
+        height: 2.6rem;
+        object-fit: cover;
+        outline: $link-active solid 2px;
+        cursor: pointer;
+        border: 6px solid black;
+      }
+    }
+  }
+}

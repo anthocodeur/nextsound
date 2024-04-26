@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.dot_color_blue {
+  background-color: blue;
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+}
+
+.dot_color_red {
+  background-color: red;
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+}
+
+.dot_color_yellow {
+  background-color: yellow;
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+}
+
+.dot_color_green {
+  background-color: green;
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+}
+
+.dot_color_purple {
+  background-color: purple;
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+}
+
+.dot_color_pink {
+  background-color: pink;
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+}
+
+.dot_color_orange {
+  background-color: orange;
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  color: #808787;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 15fr;
+  gap: 40px;
+}
+
+header {
+  background-color: #0f0f0f;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  min-width: 300px;
+}
+header nav {
+  padding: 1.5rem;
+  height: 100%;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header nav #navigation {
+  flex-grow: 1;
+  width: 75%;
+}
+header nav #navigation #logo {
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+header nav #navigation #main {
+  padding-top: 0;
+  margin-top: 0;
+}
+header nav #navigation .subtitle {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #808787;
+  font-size: 1rem;
+}
+header nav #navigation > div {
+  border-top: 1px solid rgba(68, 68, 68, 0.3843137255);
+  padding-top: 1rem;
+}
+header nav #navigation > div:first-child {
+  border-top: none;
+}
+header nav #navigation li {
+  padding: 7px 0;
+}
+header nav #navigation li img {
+  width: 20px;
+}
+header nav #navigation li a {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+header nav #navigation li a:hover {
+  color: #5fb0b7;
+}
+header nav #navigation li a.active {
+  font-weight: 600;
+}
+header nav #settings {
+  height: 80px;
+  width: 75%;
+}
+header nav #settings > div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+header nav #settings > div a {
+  color: #808787;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+$background-color: #000000;
+$background-header: #0f0f0f;
+$font-family: "Inter", sans-serif;
+$link-color: #808787;
+$link-active: #5fb0b7;
+
+$dot-colors: blue, red, yellow, green, purple, pink, orange;
+@each $dot-color in $dot-colors {
+  .dot_color_#{$dot-color} {
+    background-color: $dot-color;
+    width: 6px;
+    height: 6px;
+    border-radius: 100px;
+  }
+}

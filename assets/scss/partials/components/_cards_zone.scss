@@ -1,36 +1,35 @@
 .news_cards_zone {
-  display: grid;
-  grid-template-columns: repeat(30, 1fr);
-  gap: 35px;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: linear-gradient(270deg, #000 6%, rgba(10, 10, 10, 0) 100%);
-    height: 100%;
-    width: 27%;
-  }
-
-  > div {
-    &:first-child {
-      grid-column: span 17;
-    }
-    &:last-child {
-      grid-column: span 13;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  > .cards {
+    z-index: 1;
+    display: inline-flex;
+    gap: 35px;
+    cursor: grab;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: linear-gradient(270deg, #000 6%, rgba(10, 10, 10, 0) 100%);
+      height: 100%;
+      width: 27%;
+      z-index: 500;
+      overflow: hidden;
     }
   }
 
   .card {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 35px;
     background: linear-gradient(180deg, #1f2a2b 0%, #274749 100%);
     border-radius: 15px;
     padding: 0 2rem;
     height: auto;
+    width: 100%;
+    min-width: 700px;
 
     &_content {
       display: flex;

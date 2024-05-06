@@ -1,13 +1,14 @@
 header {
   background-color: $background-header;
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
-  min-width: 300px;
+  width: 300px;
 
   nav {
     padding: 1.5rem;
-    height: 100%;
+    position: fixed;
+    height: 100vh;
     align-items: center;
     margin: auto;
     display: flex;
@@ -51,6 +52,7 @@ header {
         }
         padding: 7px 0;
         a {
+          position: relative;
           display: flex;
           gap: 7px;
           align-items: center;
@@ -59,6 +61,25 @@ header {
 
           &:hover {
             color: $link-active;
+
+            & svg > path {
+              stroke: $link-active;
+            }
+
+            &::before {
+              position: absolute;
+              content: "";
+              border-left: 3px $link-active solid;
+              height: 120%;
+              background: linear-gradient(
+                90deg,
+                rgba(0, 228, 203, 0.2) 3.7%,
+                rgba(0, 228, 203, 0) 100%
+              );
+              width: 1.685rem;
+              left: -3.5rem;
+              top: -0.25rem;
+            }
           }
 
           &.active {
@@ -67,18 +88,26 @@ header {
         }
       }
     }
-    #settings {
-      height: 80px;
-      width: 75%;
+  }
+}
 
-      > div {
-        display: flex;
-        align-items: center;
-        gap: 7px;
+#settings {
+  height: 80px;
+  width: 75%;
 
-        a {
-          color: $link-color;
-          text-decoration: none;
+  div {
+    a {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      color: $link-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $link-active;
+
+        svg > path {
+          stroke: $link-active;
         }
       }
     }

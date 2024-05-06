@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 13fr 10fr;
   align-items: center;
+  z-index: 9999;
 
   .search_input_group {
     position: relative;

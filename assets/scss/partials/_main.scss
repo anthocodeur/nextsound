@@ -1,11 +1,16 @@
 @import "./components/search_zone";
 @import "./components/cards_zone";
 @import "./components/tags_zone";
+@import "./components/playlist_zone";
+@import "./components/player_zone";
 
 main {
   padding: 1rem;
+  position: relative;
 
   display: flex;
   flex-direction: column;
   gap: 35px;
+
+  overflow: hidden;
 }
